@@ -13,12 +13,6 @@ router.get('/', function (req, res, next) {
     x = random;
   }
 
-  //computing
-  let abs = Math.abs(x).toFixed(2)
-  let acos = Math.acos(x).toFixed(2)
-  let sin = Math.sin(x).toFixed(2)
-  let sinh = Math.sinh(x).toFixed(2)
-
   res.render('computation', {
     title: 'Computation',
     value1: `Math.abs() applied to ` + x + ` is ${Math.abs(x).toFixed(2)}`,
